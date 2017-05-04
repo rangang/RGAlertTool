@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMw-Pz-Hq2">
+                                <rect key="frame" x="156.5" y="40" width="62" height="30"/>
+                                <state key="normal" title="弹框提示"/>
+                                <connections>
+                                    <action selector="alertClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="had-Yt-ccT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62i-fq-VmJ">
+                                <rect key="frame" x="156.5" y="90" width="62" height="30"/>
+                                <state key="normal" title="弹框确认"/>
+                                <connections>
+                                    <action selector="alertConfirm:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gqC-m1-GO0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bW0-KU-edZ">
+                                <rect key="frame" x="141.5" y="140" width="92" height="30"/>
+                                <state key="normal" title="弹窗确认取消"/>
+                                <connections>
+                                    <action selector="alertWithConfirmAndCancel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tk9-Xi-xX9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2NV-Kd-t0O">
+                                <rect key="frame" x="166" y="200" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2NV-Kd-t0O" firstAttribute="centerX" secondItem="bW0-KU-edZ" secondAttribute="centerX" id="1Su-j5-udQ"/>
+                            <constraint firstItem="62i-fq-VmJ" firstAttribute="top" secondItem="DMw-Pz-Hq2" secondAttribute="bottom" constant="20" id="8FZ-RT-iBI"/>
+                            <constraint firstItem="DMw-Pz-Hq2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="A0c-V5-YiT"/>
+                            <constraint firstItem="DMw-Pz-Hq2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BXh-QY-lUl"/>
+                            <constraint firstItem="bW0-KU-edZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ICl-X7-2i3"/>
+                            <constraint firstItem="2NV-Kd-t0O" firstAttribute="top" secondItem="bW0-KU-edZ" secondAttribute="bottom" constant="30" id="Jcr-7t-Sfh"/>
+                            <constraint firstItem="62i-fq-VmJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Whj-V4-qnh"/>
+                            <constraint firstItem="bW0-KU-edZ" firstAttribute="top" secondItem="62i-fq-VmJ" secondAttribute="bottom" constant="20" id="b28-DP-Muz"/>
+                            <constraint firstItem="DMw-Pz-Hq2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oMF-Bi-Q3M"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detailL" destination="2NV-Kd-t0O" id="Woh-8f-ES1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
